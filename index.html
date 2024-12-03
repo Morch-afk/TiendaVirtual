@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinjuku Posters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shinjuku Posters</h1>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <select id="typeFilter" onchange="filterWaifus()">
+                <option value="">Seleccionar tipo de Waifu</option>
+                <option value="waifu">Waifu</option>
+                <option value="neko">Neko</option>
+                <option value="megumin">Megumin</option>
+                <option value="blush">Blush</option>
+                <option value="shiro">Shiro</option>
+            </select>
+        </div>
+
+        <div class="waifu-list" id="waifuList">
+            <!-- Las imágenes de waifus se cargarán aquí -->
+        </div>
+
+        <div class="progress-bar" id="progressBar"></div>
+
+        <div class="cart">
+            <h3>Carrito de Compras</h3>
+            <ul id="cartList" class="cart-list">
+                <!-- Los productos comprados se mostrarán aquí -->
+            </ul>
+        </div>
+
+        <div class="checkout">
+            <p id="subtotal">Subtotal: $0.00</p>
+            <p id="iva">IVA (16%): $0.00</p>
+            <p id="total">Total: $0.00</p>
+            <button class="button-checkout" onclick="completePurchase()">Hacer Compra</button>
+        </div>
+    </div>
+
+    <a href="acer.html" class="about-button">Acerca de</a>
+
+    <footer class="footer">
+        <p>&copy; 2024 Shinjuku Posters</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
