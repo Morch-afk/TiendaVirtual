@@ -204,3 +204,60 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* --- Estilos responsivos --- */
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .filters select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .waifu-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .checkout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button-checkout {
+        margin-top: 10px;
+    }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .filters select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .waifu-list {
+        grid-template-columns: 1fr;
+    }
+
+    .waifu-card {
+        padding: 10px;
+    }
+
+    .checkout {
+        font-size: 14px;
+    }
+
+    .about-button {
+        font-size: 14px;
+    }
+}
