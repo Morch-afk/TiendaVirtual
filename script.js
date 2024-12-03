@@ -84,7 +84,7 @@ window.onload = () => {
 };
 async function fetchAnimeImage() {
     try {
-        const response = await fetch('https://api.waifu.pics/sfw/waifu');
+        const response = await fetch('https://api.waifu.pics/nsfw/waifu');
         const data = await response.json();
         document.getElementById('animeImage').src = data.url;
     } catch (error) {
